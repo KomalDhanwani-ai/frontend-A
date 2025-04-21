@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form>
-        <label>Full Name: <input type="text" name="fullname"></label><br/>
+<body topmargin="20px" leftmargin="50px">
+    <form target="_blank" method="post">
+        <label>Full Name: <input type="text" name="fullname" required/></label><br/>
         <label>Email: <input type="email" name="email"></label><br/>
-        <label>Department: <input type="Text" name="department"></label><br/>
+        <label>Department: <input type="Text" name="department" required/></label><br/>
         <label>Joining Date: <input type="date" name="joining date"></label><br/>
-       <label>Resume: <input type="file" name="resume"></label><br/>
-       <button type="submit" name="submit">Submit </button> 
-    
+       <label>Resume: <input type="file" name="resume"></label><br/><br/>
+       <button type="submit"> Submit </button> &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="reset"> Reset </button>
     </form>
+   
 </body>
 </html>
