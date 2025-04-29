@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+    }
+    .nav
+    {
+        display: flex;
+        background-color: aqua;
+        height: 70px;
+     }
+    .logo
+    {
+        height: 70px;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    .logo h3
+    {
+
+        color: white;
+    }
+    .logo .image
+
+    {
+
+       justify-content: center;
+       align-items: center;
+       margin-top: 5px;
+        height: 30px;
+        width:40%;
+        text-align: right;
+    }
+    .logo img
+    {
+        width: 30%;
+        height: 30px;
+    }
+    .item
+    {
+
+        height: 30px;
+        width: 60%;
+        flex: 1;
+        padding: 20px;
+    }
+    .item ul
+    {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 20px;
+    }
+    .item ul li
+    {
+        list-style: none;
+        color: white;
+        font-size: 20px;
+    }
+    .item select
+    {
+        outline: none;
+        border: none;
+    }
+    .icon
+    {
+
+        height: 70px;
+        width: 15%;
+    }
+    .icon button
+    {
+
+        background-color: blue;
+        height: 40px;
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: white;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        border-radius: 10%;
+    }
+    .icon b
+    {
+        font-size: 16px;;
+    }
+</style>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="image">
+                <img src="https://iconape.com/wp-content/png_logo_vector/radio-button-on.png" alt="logo image"/>
+                </div>
+                <h3>Miri UI</h3>
+        </div>
+        <div class="item">
+            <ul>
+                <li>Home</li>
+                <li>Templates &nbsp;<select></select></li>
+                <li>Pages &nbsp;<select></select></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <button><b>Signin</b></button>
+        </div>
+    </div>
+    
+</body>
+</html>
