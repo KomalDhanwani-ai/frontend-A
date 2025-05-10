@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/016/716/458/original/spotify-icon-free-png.png"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Spotify </title>
+    <style>
+        /* *
+        {
+              margin:0;
+              padding:0;
+              box-sizing: border-box;
+          } */
+      </style>
+</head>
+<body class="bg-black h-screen flex flex-col">
+    <!--Nav bar-->
+    <div class="h-15 flex gap-2">
+        <div class=" w-80">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/716/458/original/spotify-icon-free-png.png"/ alt="Spotify.png" class="size-13 mt-2 ml-2">
+        </div>
+        <!--Home-->
+        <div class=" flex-1 flex justify-center items-center gap-5">
+            <i class="fa fa-home text-xl text-white bg-[#121212] rounded-full p-2 hover:scale-115 hover:cursor-pointer" aria-hidden="true"></i>
+            <span class="bg-[#121212] p-2 text-white rounded-full w-110">
+            <i class="fa fa-search text-xl text-white ml-3 mr-5" aria-hidden="true"></i>
+            <input class="w-70 text-xl" type="text" placeholder="What do you want to play ?"/>
+            <i class="fa fa-folder ml-10" aria-hidden="true"></i>
+        </span>
+        </div>
+        <div class=" w-110 flex justify-center items-center gap-5">
+            <button class="bg-white text-black font-bold rounded-2xl h-10 text-lg px-2 py-1 rounded active:bg-white hover:scale-105 ">Explore Premium</button>
+            <p class="text-white text-xl">Install App</p>
+            <span><i class="fa-regular fa-bell text-white text-xl hover:scale-115"></i></span>
+            <span><i class="fas fa-users text-white hover:scale-115"></i></span>
+
+            <span><button
+            class="h-10 w-10 rounded-full bg-green-400 flex justify-center items-center shadow-lg shadow-[#121212] border-5 border-slate-500 hover:scale-115 font-bold">
+            <b>K</b></button></span>
+        </div>
+    </div>
+
+    <!--Main body-->
+    <div class="flex flex-1 p-2 gap-2">
+        <!--side1 leftside-->
+    
+        <div class="w-80 bg-[#121212] rounded-xl overflow-y-scroll sticky top-0 left-0">
+            <div class=" h-14 flex p-2 mt-3 justify-evenly">
+                <h2 class="text-white font-bold">Your Library</h2>
+                <div class="bg-[#2a2a2a] p-2 w-30 -mt-1 rounded-full text-center">
+                    <i class="fa fa-plus text-white mr-3" aria-hidden="true"></i>
+                    <button class="text-white font-bold">Create</button>
+                </div>
+                <div>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center text-white hover:bg-[#2a2a2a] rounded-full hover:p-3 hover:cursor-pointer hover:-mt-2"></i>
+                </div>
+            </div>
+            <div class="h-14 flex p-2">
+                <div class="bg-[#2a2a2a] w-25 p-1 text-center rounded-full flex pl-5 mr-4 hover:scale-115"> 
+                    <button class="text-white font-bold text-sm">Playlists </button>
+                </div>
+                <div class="bg-[#2a2a2a] w-24 p-1 text-center rounded-full flex pl-5 hover:scale-115"> 
+                    <button class="text-white font-bold text-sm">Artists </button>
+                </div>         
+            </div>
+            <div class="h-162">
+            <div class=" flex text-white justify-between p-4">
+                <div>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        Recents &nbsp;
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <!--left side list-->  
+                    <div class=" h-18 mb-2 flex gap-4 pl-3 hover:scale-110 hover:bg-[#2a2a2a]">
+                        <div class="bg-purple-400 text-3xl text-center mb-2 w-16 p-2 text-white">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class=" flex-1 text-white text-lg p-1"><b>Liked Songs</b><br/>
+                        Playlist - 1 song
+                        </div>
+                    </div>         
+                    <!--Div 1 Complete-->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 hover:bg-[#2a2a2a] pl-3">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://lastfm.freetls.fastly.net/i/u/770x0/8ef5a2aec8cce82aa28488dbf2a0dbe7.jpg#8ef5a2aec8cce82aa28488dbf2a0dbe7" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Pritam</b><br/>
+                            Artist
+                            </div>  
+                    </div>        
+                    <!--Div 2 Complete--> 
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://opinionexpress.in/assets/images/article/amaal-mallik-i-get-a-lot-of-love-from-around-the-world.jpg" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Amaal Mallik</b><br/>
+                            Artist
+                            </div>  
+                    </div>         
+                    <!--Div 3 Complete--> 
+                    
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://www.bollywoodhungama.com/wp-content/uploads/2016/03/Palak-Muchhal-Image.jpg" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Palak Muchhal</b><br/>
+                            Artist
+                            </div>  
+                    </div>         
+                    <!--Div 4 Complete-->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebac45eaf028dc58810df0f382" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Rahat Fateh Ali Khan</b><br/>
+                            Artist
+                            </div>  
+                    </div>         
+                    <!--Div 5 Complete-->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebada368118a052fb40d3f1a68" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Shilpa Rao</b><br/>
+                            Artist
+                            </div>  
+                    </div> 
+                   
+                    <!--Div 6 Complete-->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebada368118a052fb40d3f1a68" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Seductive Bollywood</b><br/>
+                            Playlist- Priyanshi
+                            </div>  
+                    </div> 
+                    <!--7 complete -->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://lastfm.freetls.fastly.net/i/u/770x0/8ef5a2aec8cce82aa28488dbf2a0dbe7.jpg#8ef5a2aec8cce82aa28488dbf2a0dbe7" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Pritam</b><br/>
+                            Artist
+                            </div>  
+                    </div>  
+                    <!--Div 8 Complete--> 
+                    
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://www.bollywoodhungama.com/wp-content/uploads/2016/03/Palak-Muchhal-Image.jpg" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Palak Muchhal</b><br/>
+                            Artist
+                            </div>  
+                    </div>         
+                    <!--Div 9 Complete-->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebac45eaf028dc58810df0f382" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Rahat Fateh Ali Khan</b><br/>
+                            Artist
+                            </div>  
+                    </div>         
+                    <!--Div 10 Complete-->
+                    <div class=" h-16 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebada368118a052fb40d3f1a68" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Komal Dhanwani</b><br/>
+                            Artist
+                            </div>  
+                    </div> 
+                   
+                    <!--Div 11 Complete-->
+                    <div class=" h-25 flex gap-4 mb-3 hover:scale-110 pl-3 hover:bg-[#2a2a2a]">
+                        <div class="bg-pink-400 h-14 m-1 w-14 rounded-full overflow-hidden">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebada368118a052fb40d3f1a68" alt="profile" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-white text-lg p-1"><b>Seductive Bollywood</b><br/>
+                            Playlist- Priyanshi Sharma
+                            </div>  
+                    </div> 
+    
+                </div>
+            
+        </div>
+       
+        <div class="flex-1 bg-[#121212] rounded-xl">
+            <!--Upper Main-->
+            <div class="h-25 flex pt-5 pl-10 text-center">
+                <div class="h-10 bg-white text-black w-20 rounded-3xl text-lg font-bold p-1 hover:cursor-pointer mr-3">All</div>
+            <div class="h-10 bg-[#2a2a2a] text-white w-20 rounded-3xl text-lg font-bold p-1 hover:cursor-pointer mr-3">Music</div>
+           
+            <div class="h-10 bg-[#2a2a2a] text-white w-25 rounded-3xl text-lg font-bold p-1 hover:cursor-pointer">Podcasts</div>     
+            </div>
+            <!--Image wala div-->
+            <div class="h-85">
+                <div class="h-10 text-white text-3xl pl-10 font-bold">Editor's Pick</div>
+                <div class=" h-55 flex mt-2">
+                    <div class="h-50 w-75 bg-purple-400 mt-2 mr-6 ml-5 rounded-2xl hover:scale-105">
+                        <img src="https://i.ytimg.com/vi/nIkZwqAHZfg/maxresdefault.jpg" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+
+                    <div class="h-50 w-75 bg-purple-400 mr-6 mt-2 rounded-2xl hover:scale-105">
+                        <img src="https://filminformation.com/wp-content/uploads/2025/02/sanam-teri-kasam-66ee9038390ae12cbe3991a4_1726911124514_aa-1.jpg" class="w-full
+                         h-full object-cover rounded-2xl">
+                    </div>
+
+                    <div class="h-50 w-75 bg-purple-400 mr-6 mt-2 rounded-2xl hover:scale-105">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a00249b8bf77312ec156dd4b" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+
+                    <div class="h-50 w-75 bg-purple-40 mt-2 rounded-2xl hover:scale-105">
+                        <img src="https://admin.tellychakkar.com/sites/www.tellychakkar.com/files/s3fs-public/images/movie_image/2021/05/12/asin.jpg" class="w-full h-full object-cover rounded-2xl">
+                   
+                    </div>
+                </div>
+                <!--Image ke niche text wala div-->
+                <div class="h-16 flex items-center">
+                    <div class=" h-15 w-75 ml-6 mr-5 text-white pl-4 text-xl"><b>Aashiqui 2</b>
+                    <p class="text-xl">Jeet Gannguli</p></div>
+
+                    <div class=" h-15 w-75 mr-6 text-white pl-4 text-xl"><b>Sanam Teri Kasam</b><br/>
+                    <p class="text-xl">Himesh Reshammiya</p></div>
+
+                    <div class=" h-15 w-75 mr-6 text-white pl-4 text-xl"><b>Raanjhanaa</b>
+                    <p class="text-xl">Sachet Parampara</p></div>
+
+                    <div class=" h-15 w-75 text-white pl-4 text-xl"><b>Ghajini</b>
+                    <p class="text-xl">Aamir Khan</p></div>
+                </div>        
+            </div>
+            <!--Image 2 wala div-->
+
+            <div class=" h-55 mt-5 flex">
+                    <div class="h-50 w-75 bg-purple-400 mt-2 mr-6 ml-5 rounded-2xl hover:scale-105">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6x3CgyZBPmkisHERvKSKVzkVqtZyZQ4A7Q&s" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+
+                    <div class="h-50 w-75 bg-purple-400 mr-6 mt-2 rounded-2xl hover:scale-105">
+                        <img src="https://www.brutimes.com/cache/Article%20370%20film%20poster_2100_x_1470.webp" class="w-full
+                         h-full object-cover rounded-2xl">
+                    </div>
+
+                    <div class="h-50 w-75 bg-purple-400 mr-6 mt-2 rounded-2xl hover:scale-105">
+                        <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/06/3-idiot-1688114504.jpg" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+
+                    <div class="h-50 w-75 bg-purple-40 mt-2 rounded-2xl hover:scale-105">
+                        <img src="https://dailynews24.in/english/wp-content/uploads/2024/11/maxresdefault-11-1.jpg" class="w-full h-full object-cover rounded-2xl">
+                    </div>                    
+            </div>
+            <div class="h-16 flex items-center">
+                <div class=" h-15 w-75 ml-6 mr-5 text-white pl-4 text-xl"><b>Chhaava</b>
+                <p class="text-xl">Swarajya, Chhatrapati Shivaji</p></div>
+
+                <div class=" h-15 w-75 mr-6 text-white pl-4 text-xl"><b>Article 370</b><br/>
+                    <p class="text-xl">Abrogation & Restoration Resolution</p></div>
+
+                    <div class=" h-15 w-75 mr-6 text-white pl-4 text-xl"><b>3 idiots</b>
+                    <p class="text-xl">Sonu Nigam, Shreya Ghoshal and Shaan</p></div>
+
+                    <div class=" h-15 w-75 text-white pl-4 text-xl"><b>Pushpa 2</b>
+                    <p class="text-xl">Rashmika Mandanna</p></div>
+                
+            </div>
+        </div>
+
+        <!--main ke right wala-->
+        <div class="w-90 bg-[#121212] rounded-xl"></div>
+    </div>
+    <div class="h-25 bg-purple-400">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</body>
+</html>
